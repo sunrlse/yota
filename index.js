@@ -1,1 +1,4 @@
-module.exports = require('./lib')
+function init() {
+    console.log('hello npm');
+}
+module.exports = init;

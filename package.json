@@ -1,9 +1,9 @@
 {
   "name": "hule2c",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "spa react webpack",
   "bin": {
-    "hule2c": "index.js"
+    "hule2c": "./lib/index.js"
   },
   "main": "index.js",
   "dependencies": {
