@@ -1,10 +1,11 @@
 {
   "name": "hule2c",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "spa react webpack",
   "bin": {
-    "halo": "index.js"
+    "hule2c": "index.js"
   },
+  "main": "index.js",
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^2.20.0",
