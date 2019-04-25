@@ -1,9 +1,9 @@
 {
-  "name": "hule2c",
-  "version": "1.0.2",
-  "description": "spa react webpack",
+  "name": "yota",
+  "version": "1.0.0",
+  "description": "something about yota",
   "bin": {
-    "hule2c": "./lib/index.js"
+    "yota": "./lib/index.js"
   },
   "main": "index.js",
   "dependencies": {
