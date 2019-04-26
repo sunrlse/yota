@@ -8,7 +8,7 @@ const ora = require('ora');
 const chalk = require('chalk');
 const symbols = require('log-symbols');
 
-program.version('1.0.0', '-v, --version')
+program.version('1.0.2', '-v, --version')
     .command('init <name>')
     .action((name) => {
         if(!fs.existsSync(name)){
@@ -24,7 +24,8 @@ program.version('1.0.0', '-v, --version')
             ]).then((answers) => {
                 const spinner = ora('downloading templates...');
                 spinner.start();
-                download('direct:https://github.com/sunrlse/tpl-rdx.git#master', name, {clone: true}, (err) => {
+                let url = 'direct:http://gitlab.liebaopay.com:9090/CM_Launcher_FE_Work/scaffold.git#pc-spa';
+                download(url, name, {clone: true}, (err) => {
                     if(err){
                         spinner.fail();
                         console.log(symbols.error, chalk.red(err));
